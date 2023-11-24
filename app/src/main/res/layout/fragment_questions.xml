@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="24dp"
+>
+
+  <LinearLayout
+          android:id="@+id/qContainer"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginTop="25dp"
+          android:orientation="vertical"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toTopOf="@id/btn_next"
+  >
+    <TextView
+            android:id="@+id/tv_qTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:text="외향형 - 내향형 (E-I)"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#ABC123"
+    />
+
+    <!-- Q1  -->
+    <TextView
+            android:id="@+id/tv_qQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1. 데이트가 없는 주말에 나는"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+    />
+
+    <RadioGroup
+            android:id="@+id/rg_ans1"
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="단톡에 연락해서 친구들과 약속을 잡는다"
+              android:textSize="14sp"
+      />
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="침대랑 하루 종일 물아일체가 된다"
+              android:textSize="14sp"
+      />
+    </RadioGroup>
+
+    <!--  2  -->
+    <TextView
+            android:id="@+id/tv_qQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q2. 친구의 소개로 소개팅에 나온 나는"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+    />
+
+    <RadioGroup
+            android:id="@+id/rg_ans2"
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="먼저 말 걸면서 분위기를 띄운다"
+              android:textSize="14sp"
+      />
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="말을 걸어올 때까지 기다리고 본다"
+              android:textSize="14sp"
+      />
+    </RadioGroup>
+
+    <!--  3  -->
+    <TextView
+            android:id="@+id/tv_qQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q3. 데이트 중 길에서 연인의 친구를 만난다면 나는"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+    />
+
+    <RadioGroup
+            android:id="@+id/rg_ans3"
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+    >
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="자연스럽게 웃으며 대한다"
+              android:textSize="14sp"
+      />
+      <RadioButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="무생물이 되어 조용히 있는다"
+              android:textSize="14sp"
+      />
+    </RadioGroup>
+
+
+  </LinearLayout>
+
+  <Button
+          android:id="@+id/btn_next"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="다음"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
